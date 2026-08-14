@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Image Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+        <h1>Image Gallery</h1>
+        <p>Explore Nature, Animals and Technology</p>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             BONUS: FILTER CATEGORIES
+        ========================== -->
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="animals">
+                Animals
+            </button>
+
+            <button class="filter-btn" data-filter="technology">
+                Technology
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             IMAGE GALLERY
+        ========================== -->
+
+        <div class="gallery">
+
+
+            <!-- ===== NATURE ===== -->
+
+            <div class="gallery-item nature">
+
+                <img
+                    src="images/nature1.jpg"
+                    alt="Beautiful Mountains"
+                    data-title="Beautiful Mountains"
+                >
+
+                <div class="overlay">
+                    Beautiful Mountains
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item nature">
+
+                <img
+                    src="images/nature2.jpg"
+                    alt="Beautiful Waterfall"
+                    data-title="Beautiful Waterfall"
+                >
+
+                <div class="overlay">
+                    Beautiful Waterfall
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item nature">
+
+                <img
+                    src="images/nature3.jpg"
+                    alt="Green Mountains"
+                    data-title="Green Mountains"
+                >
+
+                <div class="overlay">
+                    Green Mountains
+                </div>
+
+            </div>
+
+
+            <!-- ===== ANIMALS ===== -->
+
+            <div class="gallery-item animals">
+
+                <img
+                    src="images/animal1.jpg"
+                    alt="Wild Lion"
+                    data-title="Wild Lion"
+                >
+
+                <div class="overlay">
+                    Wild Lion
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item animals">
+
+                <img
+                    src="images/animal2.jpg"
+                    alt="Cute Dog"
+                    data-title="Cute Dog"
+                >
+
+                <div class="overlay">
+                    Cute Dog
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item animals">
+
+                <img
+                    src="images/animal3.jpg"
+                    alt="Beautiful Deer"
+                    data-title="Beautiful Deer"
+                >
+
+                <div class="overlay">
+                    Beautiful Deer
+                </div>
+
+            </div>
+
+
+            <!-- ===== TECHNOLOGY ===== -->
+
+            <div class="gallery-item technology">
+
+                <img
+                    src="images/tech1.jpg"
+                    alt="Modern Laptop"
+                    data-title="Modern Laptop"
+                >
+
+                <div class="overlay">
+                    Modern Laptop
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item technology">
+
+                <img
+                    src="images/tech2.jpg"
+                    alt="Artificial Intelligence"
+                    data-title="Artificial Intelligence"
+                >
+
+                <div class="overlay">
+                    Artificial Intelligence
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item technology">
+
+                <img
+                    src="images/tech3.jpg"
+                    alt="Modern Technology"
+                    data-title="Modern Technology"
+                >
+
+                <div class="overlay">
+                    Modern Technology
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         LIGHTBOX
+    ========================== -->
+
+    <div id="lightbox" class="lightbox">
+
+        <!-- Close Button -->
+        <button
+            id="closeBtn"
+            class="close-btn"
+            aria-label="Close lightbox"
+        >
+            &times;
+        </button>
+
+
+        <!-- Previous Button -->
+        <button
+            id="prevBtn"
+            class="nav-btn prev-btn"
+            aria-label="Previous image"
+        >
+            &#10094; Previous
+        </button>
+
+
+        <!-- Lightbox Content -->
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Selected Gallery Image"
+            >
+
+            <h2 id="imageTitle"></h2>
+
+            <p id="imageCounter"></p>
+
+        </div>
+
+
+        <!-- Next Button -->
+
+        <button
+            id="nextBtn"
+            class="nav-btn next-btn"
+            aria-label="Next image"
+        >
+            Next &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Responsive Image Gallery using HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
